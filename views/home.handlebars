@@ -1,0 +1,9 @@
+<h1>Confira os Cursos disponiveis!</h1>
+{{#each courses}}
+<div class="card">
+    <h3>{{this.title}}</h3>
+    <p>Classe: {{this.class}}</p>
+    <p>Nome do Professor: {{this.name}}</p>
+    <a href="/course/{{this.id}}">Conferir</a>
+</div>
+{{/each}}
